@@ -1,0 +1,36 @@
+{
+    "author": "Antonio Gatti, ant.gatti@avanade.com; Tin, tin.aung.phyoe@avanade.com",
+    "name": "Akumina Developer ext",
+    "version": "1.0.3",
+    "manifest_version": 2,
+    "description": "Usefult extention to easy access some Akumina links",
+    "options_page": "options.html",
+    "homepage_url": "http://google.com",
+    "background": {
+      "scripts": [
+        "jquery.min.js","background.js"
+      ],
+      "persistent": true
+    },
+    "content_scripts": [
+        {
+          "matches":  [
+            "https://*/*"
+          ],
+          "js": ["content.js"]
+        }
+      ],
+    "browser_action": {
+      "default_title": "Akumina Developer ext",
+      "default_icon" : "icon.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage",
+      "https://*/*",
+      "http://*/*",
+      "tabs",
+      "contextMenus",
+      "activeTab"
+    ]
+  }

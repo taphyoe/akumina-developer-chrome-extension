@@ -1,0 +1,23 @@
+Chagnelog 1.0.2
+
+Added Menu "Management Apps > View Manager".
+Added Menu "Management Apps > Widget Manager".
+Added Storage Permission.
+Added Extension Options "Akumina App Manger URL" "Widget Manager ID" "View Manager ID:" 
+
+Options : 
+To Open Extension Options Go to > Chrome "Extensions" > Extension "Details" > "Extension options".
+
+"Akumina App Manger URL" is required. Default value is https://akuminatraining4.azurewebsites.net. You can change it according to your enviroment.
+
+"Widget Manager ID" and "View Manager ID" are dynamically loaded the first time when they are clicked. You can set manually as well.
+
+"Is Manager App ID Loaded" is set to True once the values are loaded for the first time. To reload the values , uncheck and save. 
+
+Noted : WidgetManager and ViewManager GUID are not fixed and required to get the id from https://akuminatraining4.azurewebsites.net/api/Apps/getbytitle('')?type=admin&search=
+
+
+Chagnelog 1.0.3
+
+Added popup.html file
+Added "default_popup": "popup.html" in browser actions
